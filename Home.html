@@ -1,128 +1,162 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width= 100%, initial-scale=1">
     <title>This is Box Sports</title>
     <style type="text/css">
         .crop {
-           
             width: 100%;
-            height: auto
+            height: auto;
+            padding: 0px;
+            margin: 0px;
         }
+
 
             .crop img {
                 width: 100%;
-                height: auto
+                height: auto;
+                padding: 0px;
+                margin: 0px;
             }
+
         .crop2 {
-
-            min-width: 100%;
-            max-width: 100%;
-            min-height: 100%;
-            max-height: 100%;
+            width: 100%;
             height: auto;
-            }
+            padding: 0px;
+            margin: 0px;
+        }
 
-        
-
-            .crop2 background-image {
-                
+            .crop2 img {
                 width: 100%;
                 height: auto;
+                padding: 0px;
+                margin: 0px;
             }
-        .cropbar2 {
+
+
+
+        #cropbar2 {
             height: 37px;
             width: 20px;
             padding-right: 20px;
             padding-left: 25px;
             padding-bottom: 7px;
-            float: right;
+            
         }
-        .cropbar {
+
+        #cropbar {
             height: 37px;
             width: 20px;
-            
             padding-right: 31px;
             padding-left: 31px;
             padding-bottom: 5px;
         }
-        .cropbar3 {
+
+        #cropbar3 {
             height: 37px;
             width: 20px;
             padding-right: 40px;
             padding-left: 25px;
             padding-bottom: 7px;
-            float: right;
-        }
+       }
+
         .love {
             color: #F2F2F2;
             font-size: 16px;
             padding: 40px;
-            
             text-align: center;
             font-family: 'Lato', sans-serif;
-            justify-content:flex-end;
+            justify-content: flex-end;
         }
 
-        .contact {
+        #contact {
             color: black;
-            text-align: right;
+            
             font-size: 16px;
-            padding: 40px;
-            padding-right: 100px;
+            padding: 0px;
+            padding-right: 0px;
             text-align: center;
         }
 
-        .textbox1 {
-            font-size: 12px;
-            color: white;
-            float: right;
-
-        }
 
         a:link, a:visited {
-            color: white;
+            color: #F2F2F2;
             text-align: left;
             text-decoration: none;
             display: inline-block;
             font-family: 'Lato', sans-serif;
+            height:auto;
+            width:auto;
         }
 
-        ul {
+        #navbar {
             list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
             background-color: black;
+            color: #f2f2f2;
+            display:flex;
+            flex-direction: row;
+            align-content: flex-start;
+            justify-content: flex-start;
+            align-items:stretch;
+            height:6.5%;
+            position: static;
+            
         }
 
-        li {
-            float: left;
-            color: #F2F2F2;
-            font-family: 'Lato', sans-serif;
-        }
+            #navbar li a img {
+            align-self:center;
+            align-content:center;
+            justify-content:center;
+            justify-self:center;
+            object-fit:contain;
+            margin:auto;
+            height:auto;
+            width:auto;
+            
+            }
 
-            li:last-child {
+            #navbar li {
+                color: #F2F2F2;
+                font-family: 'Lato', sans-serif;
+                font-size: 16px;
+                align-content: flex-start;
+                justify-content: center;
+                align-items: stretch;
+                height: auto;
+                width: auto;
+                margin: auto;
+            }
+
+           #navbar li:last-child {
                 border-right: none;
             }
 
-            li a {
+            #navbar li a {
                 display: block;
-                color: #FFC942;
+                color: #F2F2F2;
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
             }
 
-                li a:hover:not(.active) {
+                #navbar li a:hover:not(.active) {
                     background-color: gray;
                     color: #FFC942;
-                    
+                    align-content: flex-start;
+                    justify-content: flex-start;
+                    align-items: stretch;
                 }
 
         .active {
             background-color: gray;
             color: #FFC942;
+            align-content: flex-start;
+            justify-content: flex-start;
+            align-items: stretch;
         }
 
 
@@ -130,13 +164,15 @@
         body {
             background-color: #F2F2F2;
             margin: 0px;
-            padding:0;
+            padding: 0px;
         }
 
         html, body {
             height: 100%;
-            min-height: 100%;
-            color: #fff;
+            
+            width: 100%;
+            
+            color: #F2F2F2;
             margin: 0;
             padding: 0;
         }
@@ -147,24 +183,19 @@
         .ContactButton {
             background-color: #FFC942; /* Orange */
             color: black;
-            padding: 10px;
+            padding: 8px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
-            margin: 100px 50px;
             border: outset 3px;
             border-color: #FAC43E;
-            margin: 0;
-            position: absolute;
-            right: 17%;
-            top: 131%;
-            -ms-transform: translateY(-100%);
-            transform: translateY(-100%);
+            margin: 0px;
+            align-content:center;
         }
+
         .rounded-edge {
             border-radius: 4px;
-            
         }
 
 
@@ -172,66 +203,212 @@
         .ContactButton:hover {
             background-color: #ffd800;
             color: black;
-            padding: 10px;
+            padding: 8px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
-            margin: 100px 50px;
             border: outset 3px;
             border-color: #FAC43E;
-            margin: 0;
-            position: absolute;
-            right: 17%;
-            top: 131%;
-            -ms-transform: translateY(-100%);
-            transform: translateY(-100%);
+            margin: 0px;
+            align-content:center
+            
         }
-   
-        .bottomlinks
-        {color: #F2F2F2;
-         font-size: 24px;
-         list-style-type: circle;
-         background-color: gray;
 
+        .bottomlinks {
+            color: #F2F2F2;
+            font-size: 24px;
+            list-style-type: circle;
+            background-color: gray;
         }
 
         .news {
-        display:flex;
-        flex-direction:row;
-        justify-content: center;
-        align-items:flex-start;
-        width: 80%;
-        height: 350px;
-        object-fit:cover; 
+            display: inline-block;
         }
 
-            .news story1{
-                height:300px;
-                width:250px;
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Lato, sans-serif;
+            margin: 0;
+            display: flex inline-block;
+
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            position: relative;
+            background: gray;
+            position:center;
+            text-align:center;
+            border-top: 3px solid;
+            border-color: #FFC942;
+            display: flex;
+            flex-direction: row;
+            
+        }
+
+        /* Slides */
+
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: relative;
+            top: 50%;
+            width: auto;
+            margin-top: -30px;
+            padding: 24px;
+            color: #888;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            position: absolute;
+            right: 0;
+            border-radius: 3px 0 0 3px;
+            
+        }
+        .prev {
+            position: absolute;
+            left: 0;
+            border-radius: 3px 0 0 3px;
+            
+        }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover, .next:hover {
+                background-color: rgba(0,0,0,0.8);
+                color: #F2F2F2;
             }
-        
+
+        /* The dot/bullet/indicator container */
+        .dot-container {
+            text-align: center;
+            padding: 20px;
+            background: black;
+            border: 3px solid;
+            border-top: 2px solid;
+            border-left: 0;
+            border-right: 0; 
+            border-color: #FFC942;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+            /* Add a background color to the active dot/circle */
+            .active, .dot:hover {
+                background-color: #FFC942;
+            }
+
+        .mySlides ul {
+            padding: 0;
+            margin: 0;
+            background-color: gray;
+            display:flex;
+            flex-direction: row;
+            list-style-type: none;
+            
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .center {
+            
+            width: 70%;
+            height: 30%;
+        }
+
+        .menu li {
+            float: left;
+            background-color: black;
+            margin: 1.5%;
+            border: 2px solid;
+            border-color: #FFC942;
+            text-decoration: none;
+            margin-top: 5%;
+
+
+            
+        }
+
+            .menu li a {
+                display: block;
+                height: 200px;
+                width: 257px;
+                text-decoration: none;
+                align-self: center;
+                margin-left: 2%;
+                margin-right: 2%;
+            }
+
+            .menu li img {
+                object-fit: contain;
+                display:inline-block;
+                justify-content:center;
+                height: 57.2%;
+                width: 100%;
+                margin-top:5%;
+                margin-left:2%;
+                margin-right:2%;
+                margin-bottom: 2%;
+                text-decoration: none;
+            }
+
+            .menu li p {
+                text-align:left;
+                font-family: Lato, sans-serif;
+                color: #F2F2F2;
+                font-size: 14px;
+                word-wrap: normal break-word initial inherit;
+            }
+
+        .mySlides {
+            height: 30%;
+            width: 80%;
+            background-color: gray;
+
+        }
     </style>
 </head>
 <body>
-    <ul>
-        <li class="cropbar"><a href="http://www.thisisboxsports.com/home.html" target="_self"><img src="https://i.ibb.co/xMB3RjN/alibackground5.png"></a></li>
-        <li><a href="http://www.thisisboxsports.com/home.html" target="_self"><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">Home</a></li>
-        <li><a href="http://www.thisisboxsports.com/about.html" target="_self"><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"> About</a></li>
-        <li><a href="http://www.thisisboxsports.com/news.html" target="_self"><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"> News</a></li>
-        <li><a href="http://www.thisisboxsports.com/blog.html" target="_self"><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"> Blog</a></li>
-        <li><a href="http://www.thisisboxsports.com/contact.html" target="_self"><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"> Contact</a></li>
-        <li class="cropbar3" style="float: right">
+    <ul id="navbar">
+        <li style="flex-grow: .5;"><a href="http://www.thisisboxsports.com/home.html" target="_self"><img src="https://i.ibb.co/xMB3RjN/alibackground5.png"></a></li>
+        <li style="flex-grow: 1;"><a href="http://www.thisisboxsports.com/home.html" target="_self"><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">Home</a></li>
+        <li style="flex-grow: 1;"><a href="http://www.thisisboxsports.com/about.html" target="_self"><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"> About</a></li>
+        <li style="flex-grow: 1;"><a href="http://www.thisisboxsports.com/news.html" target="_self"><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"> News</a></li>
+        <li style="flex-grow: 1;"><a href="http://www.thisisboxsports.com/blog.html" target="_self"><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"> Blog</a></li>
+        <li style="flex-grow: 1;"><a href="http://www.thisisboxsports.com/contact.html" target="_self"><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"> Contact</a></li>
+        <li style="flex-grow: 18;"></li>
+        <li style="flex-grow: .1; align-content:center;">
             <a href="default.asp" target="_blank">
                 <img src="https://i.ibb.co/hmgJsgd/twitter.png" alt="twitter" border="0">
             </a>
         </li>
-        <li class="cropbar2" style="float: right">
+        <li style="flex-grow: .1; align-content: center;">
             <a href="default.asp" target="_blank">
                 <img src="https://i.ibb.co/2Mr0X78/facebook.png" alt="facebook" border="0">
             </a>
         </li>
-        <li class="cropbar2" style="float: right">
+        <li style="flex-grow: .1; align-content: center;">
             <a href="default.asp" target="_blank">
                 <img src="https://i.ibb.co/6tWmYbb/youtube.png" alt="youtube" border="0">
             </a>
@@ -239,61 +416,119 @@
     </ul>
 
 
- <div style="height: .35%; width: 100%; background-color: #FFC942"></div>
-    <div style="width:100%; height:35%"><div class="crop"; style= "min-width:100%;
+    <div style="height: .35%; width: 100%; background-color: #FFC942"></div>
+    <div style="width:100%; height:auto">
+        <div class="crop" ; style="
+        min-width:100%;
         max-width:100%;
         min-height:100%;
         max-height:100%;
         height: auto;
         object-fit: cover;
-        display:flex;"> <img src='https://i.ibb.co/Q6yRD53/Screenshot-2020-06-20-Home-Mysite-1.png'>
+        display:flex;">
+            <img src='https://i.ibb.co/Q6yRD53/Screenshot-2020-06-20-Home-Mysite-1.png'>
         </div>
-    <div style="height:.8%; width: 100%; background-color: #FFC942; float: left"></div>
+        <div style="height:.8%; width: 100%; background-color: #FFC942; padding: 0px; margin: 0px;"></div>
     </div>
-    <div style="width:100%; height:60%">
-        <div class="crop2" ; style="min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; height: auto; display:flex; object-fit: unset;">
-           <div><img style="height:100%; width:100%"; src="https://i.ibb.co/k6gdcsz/Screenshot-2020-06-17-Home-Mysite.png"> <div style="display: flex; flex-flow: column; flex: margin-right:auto; order: 2;">
-                <p class="love">
-                    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-                    I love boxing. You love boxing. <i><b>We</i></b> love boxing.<br />
-                    <br />
-                    I've spent the better part of a decade getting beat up for loving it,<br /> and I want a place to catalog my and your boxing experience.<br />
-                    <br />
-                    Opinions, editorials and news are all here for you,<br />along with instructionals, reviews and published user pieces.<br />
-                    <br />
-                    Thanks for stopping by!
-                </p>
-            </div>
+    <div style="height:.35%; width: 100%; background-color: #FFC942; padding: 0px; margin: 0px;"></div>
+
+    <div style="width:100%; height:auto">
+        <div class="crop2" ; style="
+        min-width:100%;
+        max-width:100%;
+        min-height:100%;
+        max-height:100%;
+        height: auto;
+        object-fit: cover;
+        display:flex;">
+
+
+            <img style="object-fit:fill" src="https://i.ibb.co/PWvjRZJ/homebg2.png">
+
+
         </div>
+
+
     </div>
 
-        <div style="float: right">
-            <p class="contact">
-                Want something published? Have an idea? Think I'm an asshole?
-            </p>
-            <div class="ContactButton rounded-edge ContactButton:hover ">
-                <a href="thisisboxsports.com" ; style="color: black; object-position: center">Contact Me</a>
-            </div>
-            <p class="contact">I'd love to hear about it.</p>
-        </div>
-        <div style="float: left">
-            <ul class="bottomlinks">
-                <li class="bottomlinksli"><a href="thisisboxsports.com">How to Box</a></li>
-                <br />
-                <li class="bottomlinksli"><a href="thisisboxsports.com/gearguide.html">Gear Guide</a></li>
-                <br />
-                <li class="bottomlinksli"><a href="thisisboxsports.com">Other Sports</a></li>
-                <br />
+    <div style="height:.35%; width: 100%; background-color: #FFC942; padding: 0px; margin: 0px; position: absolute;"></div>
+
+    <div class="slideshow-container" style="margin-left:10%; margin-right:10%; margin-top: 2%; align-content:center; justify-content: center;width:80%; height: auto;">
+
+        <div class="mySlides" style="margin-left:10%; margin-right:10%; width: 100%; height: auto; object-fit:scale-down ">
+            <ul class="menu" style="align-content: center; justify-content: center;object-fit:scale-down">
+                <li><a href="https://www.boxingscene.com/team-dalakian-denies-plans-unification-with-julio-cesar-martinez--149772"><img src="https://i.ibb.co/m0RChD5/news-pic-fixed.jpg"><p><b>Team Dalakian Denies Plans For Unification With Julio Cesar Martinez</b></p></a></li>
+                <li><a href="https://www.boxingscene.com/team-dalakian-denies-plans-unification-with-julio-cesar-martinez--149772"><img src="https://i.ibb.co/m0RChD5/news-pic-fixed.jpg"><p><b>Team Dalakian Denies Plans For Unification With Julio Cesar Martinez</b></p></a></li>
+                <li><a href="https://www.boxingscene.com/team-dalakian-denies-plans-unification-with-julio-cesar-martinez--149772"><img src="https://i.ibb.co/m0RChD5/news-pic-fixed.jpg"><p><b>Team Dalakian Denies Plans For Unification With Julio Cesar Martinez</b></p></a></li>
             </ul>
         </div>
-    </div>
-    <div class="news">
-        <div class="news story1"><a href="https://www.boxingscene.com/team-dalakian-denies-plans-unification-with-julio-cesar-martinez--149772"><img src="https://i.ibb.co/d7RR92t/200px-Julio-Cesar-Martinez.jpg" alt="200px-Julio-Cesar-Martinez" border="0">Team Dalakian Denies Plans For Unification With Julio Cesar Martinez<</a></div>
-        <div class="news story1"><a href="https://www.boxingscene.com/team-dalakian-denies-plans-unification-with-julio-cesar-martinez--149772"><img src="https://i.ibb.co/d7RR92t/200px-Julio-Cesar-Martinez.jpg" alt="200px-Julio-Cesar-Martinez" border="0">Team Dalakian Denies Plans For Unification With Julio Cesar Martinez<</a></div>
-        <div class="news story1"><a href="https://www.boxingscene.com/team-dalakian-denies-plans-unification-with-julio-cesar-martinez--149772"><img src="https://i.ibb.co/d7RR92t/200px-Julio-Cesar-Martinez.jpg" alt="200px-Julio-Cesar-Martinez" border="0">Team Dalakian Denies Plans For Unification With Julio Cesar Martinez<</a></div>
+        <div class="mySlides" style="margin-left:10%; margin-right:10%;">
+            <ul class="menu" style="align-content: center; justify-content: center;">
+                <li><a href="https://www.espn.com/mlb/story/_/id/29390182/key-questions-minor-league-baseball-officially-cancels-2020-season"><img src="https://i.ibb.co/Qf38bSZ/MLBslide.jpg"><p style="text-align:left"><b>Key questions as Minor League Baseball officially cancels 2020 season</b></p></a></li>
+                <li><a href="https://www.cbssports.com/mlb/news/how-covid-19-is-impacting-mlb-tracking-teams-with-positive-cases-and-players-who-have-opted-out/"><img src="https://i.ibb.co/4TLDw9c/ryan-zimmerman-1.png"><p><b>How COVID-19 is impacting MLB: Tracking teams with positive cases...</b></p></a></li>
+                <li><a href="https://www.mlb.com/news/top-summer-camp-storyline-for-every-mlb-team"><img src="https://img.mlbstatic.com/mlb-images/image/private/t_16x9/t_w1536/mlb/lblcsvc1fymfnjuytwqr"><p><b>Top Summer Camp storyline for every team</b></p></a></li>
+            </ul>
+        </div>
+        <div class="mySlides" style="margin-left:10%; margin-right:10%;">
+            <ul class="menu" style="align-content: center; justify-content: center;">
+                <li><a href="https://www.boxingscene.com/team-dalakian-denies-plans-unification-with-julio-cesar-martinez--149772"><img src="https://i.ibb.co/m0RChD5/news-pic-fixed.jpg"><p><b>Team Dalakian Denies Plans For Unification With Julio Cesar Martinez</b></p></a></li>
+                <li><a href="https://www.boxingscene.com/team-dalakian-denies-plans-unification-with-julio-cesar-martinez--149772"><img src="https://i.ibb.co/m0RChD5/news-pic-fixed.jpg"><p><b>Team Dalakian Denies Plans For Unification With Julio Cesar Martinez</b></p></a></li>
+                <li><a href="https://www.boxingscene.com/team-dalakian-denies-plans-unification-with-julio-cesar-martinez--149772"><img src="https://i.ibb.co/m0RChD5/news-pic-fixed.jpg"><p><b>Team Dalakian Denies Plans For Unification With Julio Cesar Martinez</b></p></a></li>
+            </ul>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
 
     </div>
 
+    <div class="dot-container" style="margin-left:10%; margin-right:10%;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <div style="margin-left:30%; margin-top: 5%; margin-right: 30%; margin-bottom: 5%;">
+        <div id="contact">
+
+            Want something published? Have an idea? Think I'm an asshole?<br />
+            <br />
+
+            <div class="ContactButton rounded-edge ContactButton:hover">
+                <a href="thisisboxsports.com" ; style="color: black; object-position: center">Contact Me</a>
+            </div><br /><br />
+            I'd love to hear about it.
+
+        </div>
+    </div>
 
 
 </body>
